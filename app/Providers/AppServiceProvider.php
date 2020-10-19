@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Customer;
@@ -29,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
         $this->bootEloquentMorphs();
     }
 
