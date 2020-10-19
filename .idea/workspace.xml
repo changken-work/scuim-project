@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42a8443-022e-4ec8-b332-b7eebc3ed094" name="Default Changelist" comment="" />
+    <list default="true" id="e42a8443-022e-4ec8-b332-b7eebc3ed094" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/about-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/home-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/post-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/post-sample-image.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,6 +161,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1j4WTVawj5yygoT6LzvyuACXt4d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,8 +171,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\PhpStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,26 +199,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603063855207</updated>
-      <workItem from="1603063858473" duration="9826000" />
+      <workItem from="1603063858473" duration="12428000" />
+      <workItem from="1603091181611" duration="68000" />
+      <workItem from="1603091481275" duration="147000" />
+      <workItem from="1603091642544" duration="4581000" />
+      <workItem from="1603107777350" duration="4699000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603072357768">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603072357768" />
+    <state x="449" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603091218129">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="147" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1603091218129" />
     <state x="602" y="335" key="NewPhpFileDialog" timestamp="1603066586464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603066586464" />
-    <state x="207" y="75" width="995" height="710" key="SettingsEditor" timestamp="1603065985461">
+    <state x="144" y="17" width="995" height="710" key="SettingsEditor" timestamp="1603091765651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="207" y="75" width="995" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603065985461" />
+    <state x="144" y="17" width="995" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603091765651" />
+    <state x="0" y="0" width="1092" height="810" key="dock-window-1" timestamp="1603110352079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="1092" height="810" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1603110352079" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1603075934370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -188,5 +250,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="66" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603074728269" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="scuim-project" type="b2602c69:ProjectViewProjectNode" />
+        <item name="scuim-project" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>

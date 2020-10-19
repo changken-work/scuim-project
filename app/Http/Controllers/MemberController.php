@@ -38,12 +38,12 @@ class MemberController extends Controller
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
         /*
-         * user => 一般使用者
-         * admin => 管理者
-         * factory => 車廠
-         * vendor => 車商
+         * customers => 一般使用者
+         * admins => 管理者
+         * factories => 車廠
+         * vendors => 車商
          * */
-        $user->level = 'user';
+        $user->userable_type = 'customers';
         $user->save();
 
         return redirect()->route('login');
