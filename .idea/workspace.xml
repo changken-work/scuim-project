@@ -131,9 +131,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\PhpStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\User\Desktop\線上課程\laravel\PHP_Project\scuim-project\resources\views\member" />
+      <recent name="D:\User\Desktop\線上課程\laravel\PHP_Project\scuim-project\resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\User\Desktop\線上課程\laravel\PHP_Project\scuim-project\resources\views" />
+      <recent name="D:\User\Desktop\線上課程\laravel\PHP_Project\scuim-project\resources\views\layout" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -149,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603063855207</updated>
-      <workItem from="1603063858473" duration="1626000" />
+      <workItem from="1603063858473" duration="9826000" />
     </task>
     <servers />
   </component>
@@ -157,9 +168,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="602" y="335" key="NewPhpFileDialog" timestamp="1603065144593">
+    <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603072357768">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="602" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603065144593" />
+    <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603072357768" />
+    <state x="602" y="335" key="NewPhpFileDialog" timestamp="1603066586464">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="602" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603066586464" />
+    <state x="207" y="75" width="995" height="710" key="SettingsEditor" timestamp="1603065985461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="207" y="75" width="995" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603065985461" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603075934370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603075934370" />
+    <state x="425" y="66" width="672" height="678" key="search.everywhere.popup" timestamp="1603074728269">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603074728269" />
   </component>
 </project>

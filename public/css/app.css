@@ -20195,3 +20195,12 @@ footer .copyright {
   padding: 25px 35px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header.masthead {
+  top: -30px;
+}
+
