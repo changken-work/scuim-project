@@ -34,6 +34,20 @@
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="FullName" name="fullname" id="fullname" required data-validation-required-message="Please enter your fullname.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls">
+                            <label>Phone</label>
+                            <input type="text" class="form-control" placeholder="Phone" name="phone" id="phone" required data-validation-required-message="Please enter your phone.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
                     <br>
                     <div id="success"></div>
                     <button type="submit" class="btn btn-primary" id="regBtn">Register</button>

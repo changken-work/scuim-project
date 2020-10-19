@@ -38,10 +38,10 @@ class AppServiceProvider extends ServiceProvider
     private function bootEloquentMorphs()
     {
         Relation::morphMap([
-            Model::getActualClassNameForMorph(Admin::class) => Admin::class,
-            Model::getActualClassNameForMorph(Customer::class) => Customer::class,
-            Model::getActualClassNameForMorph(Vendor::class) => Vendor::class,
-            Model::getActualClassNameForMorph(Factory::class) => Factory::class,
+            "admins" => Admin::class,
+            "customers" => Customer::class,
+            "vendors" => Vendor::class,
+            "factories" => Factory::class,
         ]);
     }
 }

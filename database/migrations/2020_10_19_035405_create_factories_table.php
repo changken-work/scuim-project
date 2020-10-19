@@ -18,7 +18,7 @@ class CreateFactoriesTable extends Migration
             $table->string('name');
             $table->string('tel');
             $table->string('address');
-            $table->json('worktime');
+            $table->text('worktime');
             $table->text('description');
             $table->timestamps();
         });
