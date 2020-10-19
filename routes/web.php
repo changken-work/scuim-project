@@ -22,4 +22,5 @@ Route::post('/reg', [App\Http\Controllers\MemberController::class, 'regc'])->nam
 Route::middleware('auth')->group(function(){
     Route::get('/member', [App\Http\Controllers\MemberController::class, 'index'])->name('member.index');
     Route::get('/query', [App\Http\Controllers\IndexController::class, 'query'])->name('query');
+    Route::get('/query/{id}', [App\Http\Controllers\IndexController::class, 'queryItem'])->name('queryItem');
 });

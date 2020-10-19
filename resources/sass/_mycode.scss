@@ -9,4 +9,14 @@ header.masthead{
     top:-30px;
 }
 
+//query
+a.query-item{
+    display: block;
+    text-decoration: none;
+
+    &:hover{
+        color:black;
+    }
+}
+
 
