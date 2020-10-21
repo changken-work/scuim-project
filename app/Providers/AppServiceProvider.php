@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
+use App;
 use App\Models\Customer;
 use App\Models\Admin;
 use App\Models\Vendor;
@@ -29,6 +31,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //redirect http to https
+        if (App::environment('production')) {
+            Url::forceScheme('https');
+        }
+
         Schema::defaultStringLength(191);
         $this->bootEloquentMorphs();
     }

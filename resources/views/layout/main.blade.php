@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@yield('title')</title>
+    <title>{{ env('APP_NAME') }} - @yield('title')</title>
 
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -39,6 +39,14 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('member.index') }}">會員中心</a>
+                        </li>
+                        @can('view-logs')
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('viewLogs') }}">瀏覽紀錄</a>
+                            </li>
+                        @endcan
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}">登出[{{ \Illuminate\Support\Facades\Auth::user()->name }}]</a>
                         </li>
                     @else
                         <li class="nav-item">
@@ -111,7 +119,7 @@
     </footer>
 
     <!--js-->
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 

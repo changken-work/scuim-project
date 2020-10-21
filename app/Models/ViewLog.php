@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class ViewLog extends Model
 {
     use HasFactory;
+
+    /**
+     * 是否主動維護時間戳記
+     *
+     * @var bool
+     */
+    public $timestamps = false;
 }

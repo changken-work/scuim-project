@@ -16,11 +16,13 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('i
 
 Route::get('/login', [App\Http\Controllers\MemberController::class, 'login'])->name('login');
 Route::post('/login', [App\Http\Controllers\MemberController::class, 'loginc'])->name('loginc');
+Route::get('/logout', [App\Http\Controllers\MemberController::class, 'logout'])->name('logout');
 Route::get('/reg', [App\Http\Controllers\MemberController::class, 'reg'])->name('reg');
 Route::post('/reg', [App\Http\Controllers\MemberController::class, 'regc'])->name('regc');
 
 Route::middleware('auth')->group(function(){
     Route::get('/member', [App\Http\Controllers\MemberController::class, 'index'])->name('member.index');
     Route::get('/query', [App\Http\Controllers\IndexController::class, 'query'])->name('query');
-    Route::get('/query/{id}', [App\Http\Controllers\IndexController::class, 'queryItem'])->name('queryItem');
+    Route::get('/query/{id}', [App\Http\Controllers\IndexController::class, 'queryItem'])->name('queryItem')->middleware('addviewlogs');
+    Route::get('/viewlogs', [App\Http\Controllers\MemberController::class, 'viewLogs'])->name('viewLogs')->middleware('can:view-logs');
 });

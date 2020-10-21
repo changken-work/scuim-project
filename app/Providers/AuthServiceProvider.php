@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('view-logs', function ($user){
+            return $user->userable_type === 'customers';
+        });
     }
 }

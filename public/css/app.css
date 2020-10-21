@@ -20213,3 +20213,13 @@ a.query-item:hover {
   color: black;
 }
 
+@media (max-width: 569px) {
+  .repairContainer {
+    overflow-x: auto;
+  }
+
+  .repairTable {
+    width: 960px;
+  }
+}
+

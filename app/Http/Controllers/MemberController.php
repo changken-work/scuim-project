@@ -60,4 +60,18 @@ class MemberController extends Controller
         }
         return redirect()->route('reg');
     }
+
+    public function logout(){
+        Auth::logout();
+        return redirect()->route('login');
+    }
+
+    public function viewLogs(){
+        $user = Auth::user();
+        $customer = $user->userable;
+        $cars = $customer->car()->orderBy('viewed_at', 'desc')->get();
+        return view('member.viewLogs', [
+            "cars" => $cars
+        ]);
+    }
 }

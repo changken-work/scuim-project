@@ -19,4 +19,14 @@ a.query-item{
     }
 }
 
+//repair logs table
+@media(max-width: 569px) {
+    .repairContainer{
+        overflow-x: auto;
+    }
+
+    .repairTable{
+        width: 960px;
+    }
+}
 

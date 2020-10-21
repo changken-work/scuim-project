@@ -61,6 +61,10 @@
                         <td>{{ $car->vendor->tel }}</td>
                     </tr>
                     <tr>
+                        <th scope="row">車商地址</th>
+                        <td>{{ $car->vendor->address }}</td>
+                    </tr>
+                    <tr>
                         <th scope="row">車商上班時間</th>
                         <td>{{ $car->vendor->worktime }}</td>
                     </tr>
@@ -73,12 +77,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 mx-auto">
+            <div class="col-12">
                 <h2 class="text-center mb-3">車況維護紀錄</h2>
-                <table class="table">
+            </div>
+            <div class="col-12 mx-auto repairContainer">
+                <table class="table repairTable">
                     <thead class="thead-light">
                     <tr>
-                        <th scope="col">車商</th>
+                        <th scope="col">車廠</th>
                         <th scope="col">本次hash值</th>
                         <th scope="col">前次hash值</th>
                         <th scope="col">里程數</th>
