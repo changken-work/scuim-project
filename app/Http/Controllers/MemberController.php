@@ -70,7 +70,7 @@ class MemberController extends Controller
         $user = Auth::user();
         $customer = $user->userable;
         $cars = $customer->car()->orderBy('viewed_at', 'desc')->get();
-        return view('member.viewLogs', [
+        return view('member.view-logs', [
             "cars" => $cars
         ]);
     }

@@ -24,5 +24,9 @@ Route::middleware('auth')->group(function(){
     Route::get('/member', [App\Http\Controllers\MemberController::class, 'index'])->name('member.index');
     Route::get('/query', [App\Http\Controllers\IndexController::class, 'query'])->name('query');
     Route::get('/query/{id}', [App\Http\Controllers\IndexController::class, 'queryItem'])->name('queryItem')->middleware('addviewlogs');
-    Route::get('/viewlogs', [App\Http\Controllers\MemberController::class, 'viewLogs'])->name('viewLogs')->middleware('can:view-logs');
+    Route::get('/viewlogs', [App\Http\Controllers\MemberController::class, 'viewLogs'])->name('viewLogs')->middleware('can:customers');
+
+    Route::prefix('/admin')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('admin.index');
+    });
 });

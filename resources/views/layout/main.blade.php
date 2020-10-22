@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">二手車交易網</a>
+            <a class="navbar-brand" href="{{ url('/') }}">{{ env('APP_NAME') }}</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -40,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('member.index') }}">會員中心</a>
                         </li>
-                        @can('view-logs')
+                        @can('customers')
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('viewLogs') }}">瀏覽紀錄</a>
                             </li>
@@ -112,7 +112,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; 二手車交易網 2020</p>
+                    <p class="copyright text-muted">Copyright &copy; {{ env('APP_NAME') }} 2020</p>
                 </div>
             </div>
         </div>
