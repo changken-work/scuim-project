@@ -25,6 +25,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        //超級使用者
+//        Gate::before(function ($user){
+//            return $user->id == env('SUPER_ADMIN_ID');
+//        });
+
         Gate::define('customers', function ($user){
             return $user->userable_type === 'customers';
         });

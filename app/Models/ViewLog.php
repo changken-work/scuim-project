@@ -3,9 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class ViewLog extends Model
+class ViewLog extends Pivot
 {
     use HasFactory;
 
@@ -15,4 +15,19 @@ class ViewLog extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    /**
+     * 表格名稱
+     *
+     * @var string
+     * */
+    protected $table = 'view_logs';
+
+    public function customer(){
+        return $this->belongsTo(Customer::class);
+    }
+
+    public function car(){
+        return $this->belongsTo(Car::class);
+    }
 }

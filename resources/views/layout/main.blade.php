@@ -40,6 +40,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('member.index') }}">會員中心</a>
                         </li>
+                        @canany(['admins', 'vendors', 'factories'])
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.index') }}">管理後台</a>
+                            </li>
+                        @endcanany
                         @can('customers')
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('viewLogs') }}">瀏覽紀錄</a>

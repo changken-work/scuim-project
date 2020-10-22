@@ -28,5 +28,18 @@ Route::middleware('auth')->group(function(){
 
     Route::prefix('/admin')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('admin.index');
+
+        Route::middleware('can:admins')->group(function(){
+            Route::resource('user', \App\Http\Controllers\Admin\UserController::class);
+            Route::get('/viewlogslist', [\App\Http\Controllers\Admin\IndexController::class, 'viewLogsList'])->name('admin.viewLogsList');
+        });
+
+        Route::middleware('can:factories')->group(function() {
+            Route::get('/repairlogslist', [\App\Http\Controllers\Admin\IndexController::class, 'repairLogsList'])->name('admin.repairLogsList');
+            Route::get('/signrepairlogs', [\App\Http\Controllers\Admin\IndexController::class, 'signRepairLogs'])->name('admin.signRepairLogs');
+            Route::post('/signrepairlogs', [\App\Http\Controllers\Admin\IndexController::class, 'signRepairLogsc'])->name('admin.signRepairLogsc');
+        });
+
+        Route::resource('car', \App\Http\Controllers\Admin\CarController::class);
     });
 });

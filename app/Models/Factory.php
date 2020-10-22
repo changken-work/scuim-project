@@ -14,6 +14,9 @@ class Factory extends Model
     }
 
     public function car(){
-        return $this->belongsToMany(Car::class, 'repair_logs')->withTimestamps()->withPivot('current_hash', 'prev_hash', 'mileages', 'created_at', 'updated_at');;
+        return $this->belongsToMany(Car::class, 'repair_logs')
+            ->withTimestamps()
+            ->using(\App\Models\RepairLog::class)
+            ->withPivot('current_hash', 'prev_hash', 'mileages', 'created_at', 'updated_at');;
     }
 }

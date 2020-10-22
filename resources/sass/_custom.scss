@@ -21,11 +21,11 @@ a.query-item{
 
 //repair logs table
 @media(max-width: 569px) {
-    .repairContainer{
+    .rwdTableContainer{
         overflow-x: auto;
     }
 
-    .repairTable{
+    .rwdTable{
         width: 960px;
     }
 }

@@ -80,8 +80,8 @@
             <div class="col-12">
                 <h2 class="text-center mb-3">車況維護紀錄</h2>
             </div>
-            <div class="col-12 mx-auto repairContainer">
-                <table class="table repairTable">
+            <div class="col-12 mx-auto rwdTableContainer">
+                <table class="table rwdTable">
                     <thead class="thead-light">
                     <tr>
                         <th scope="col">車廠</th>

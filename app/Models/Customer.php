@@ -14,6 +14,8 @@ class Customer extends Model
     }
 
     public function car(){
-        return $this->belongsToMany(Car::class, 'view_logs')->withPivot('viewed_at');
+        return $this->belongsToMany(Car::class, 'view_logs')
+            ->using(\App\Models\ViewLog::class)
+            ->withPivot('viewed_at');
     }
 }

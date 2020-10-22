@@ -22,11 +22,40 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('admin.index') }}">後台</a>
                     </li>
+                    @can('admins')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('user.index') }}">使用者管理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.viewLogsList') }}">瀏覽紀錄管理</a>
+                        </li>
+                    @endcan
+                    @canany(['admins', 'vendors'])
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                車款管理
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{ route('car.index') }}">車款列表</a>
+                                @can('vendors')
+                                <a class="dropdown-item" href="{{ route('car.create') }}">新增車款</a>
+                                @endcan
+                            </div>
+                        </li>
+                    @endcanany
+                    @can('factories')
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                簽署管理
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{ route('admin.repairLogsList') }}">簽署紀錄列表</a>
+                                <a class="dropdown-item" href="{{ route('admin.signRepairLogs') }}">簽署車況維護紀錄</a>
+                            </div>
+                        </li>
+                    @endcan
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('index') }}">前台</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                 </ul>
             </div>
