@@ -74,7 +74,9 @@ class CarController extends Controller
      */
     public function show($id)
     {
-        $car = Car::with(['vendor', 'factory'])->findOrFail($id);
+        $car = Car::with(['vendor', 'factory' => function($q){
+            $q->orderBy('repair_logs.created_at', 'desc');
+        }])->findOrFail($id);
         return view('admin.car.show', [
             'car' => $car
         ]);

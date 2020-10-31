@@ -15,7 +15,7 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">項目</th>
-                            <th scope="col">值</th>
+                            <th scope="col">會員資料</th>
                         </tr>
                     </thead>
                     <tbody>

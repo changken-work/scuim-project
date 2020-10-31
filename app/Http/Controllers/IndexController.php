@@ -19,7 +19,9 @@ class IndexController extends Controller
     }
 
     public function queryItem($id){
-        $car = Car::with('factory')->findOrFail($id);
+        $car = Car::with(['factory' => function($q){
+            $q->orderBy('repair_logs.created_at', 'desc');
+        }])->findOrFail($id);
         return view('query-item', [
             "car" => $car
         ]);

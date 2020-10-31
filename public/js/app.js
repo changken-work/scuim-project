@@ -37361,8 +37361,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // });
 //jquery
 
-__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); //popper.js
-
+window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); //popper.js
 
 __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js"); //bootstrap
 

@@ -78,7 +78,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center mb-3">車況維護紀錄</h2>
+                <h2 class="text-center mb-3">近30天車況維護紀錄</h2>
             </div>
             <div class="col-12 mx-auto rwdTableContainer">
                 <table class="table rwdTable">
@@ -88,6 +88,7 @@
                         <th scope="col">本次hash值</th>
                         <th scope="col">前次hash值</th>
                         <th scope="col">里程數</th>
+                        <th scope="col">平均轉速</th>
                         <th scope="col">紀錄時間</th>
                     </tr>
                     </thead>
@@ -98,6 +99,7 @@
                             <td>{{ $factory->pivot->current_hash }}</td>
                             <td>{{ $factory->pivot->prev_hash }}</td>
                             <td>{{ $factory->pivot->mileages }}</td>
+                            <td>{{ $factory->pivot->avg_rpm }}</td>
                             <td>{{ $factory->pivot->created_at }}</td>
                         </tr>
                     @endforeach

@@ -23,6 +23,6 @@ class Car extends Model
         return $this->belongsToMany(Factory::class, 'repair_logs')
             ->withTimestamps()
             ->using(\App\Models\RepairLog::class)
-            ->withPivot('current_hash', 'prev_hash', 'mileages', 'created_at', 'updated_at');;
+            ->withPivot('current_hash', 'prev_hash', 'mileages', 'avg_rpm', 'created_at', 'updated_at');;
     }
 }

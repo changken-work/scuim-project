@@ -43,3 +43,7 @@ Route::middleware('auth')->group(function(){
         Route::resource('car', \App\Http\Controllers\Admin\CarController::class);
     });
 });
+
+Route::prefix('/api')->group(function () {
+    Route::get('/getlastrepairlog/{id}', [\App\Http\Controllers\Admin\IndexController::class, 'getLastRepairLog'])->name('api.getlastrepairlog');
+});

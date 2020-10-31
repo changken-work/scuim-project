@@ -82,5 +82,9 @@
 
     <!--js-->
     <script src="{{ asset('js/app.js') }}"></script>
+
+    <!-- js custom -->
+    @section('custom-js')
+    @show
 </body>
 </html>

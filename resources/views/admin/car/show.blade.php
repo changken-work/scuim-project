@@ -96,6 +96,7 @@
                     <th scope="col">本次hash</th>
                     <th scope="col">前次hash</th>
                     <th scope="col">里程數</th>
+                    <th scope="col">平均轉速</th>
                     <th scope="col">紀錄時間</th>
                 </tr>
                 </thead>
@@ -106,6 +107,7 @@
                     <td>{{ $factory->pivot->current_hash }}</td>
                     <td>{{ $factory->pivot->prev_hash }}</td>
                     <td>{{ $factory->pivot->mileages }}</td>
+                    <td>{{ $factory->pivot->avg_rpm }}</td>
                     <td>{{ $factory->pivot->created_at }}</td>
                 </tr>
                 @endforeach
