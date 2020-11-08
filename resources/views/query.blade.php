@@ -4,7 +4,7 @@
 
 @section('subTitle', "這邊能夠找到您想到找的車!!")
 
-@section('backgroundImageUrl', 'https://s7d1.scene7.com/is/image/hyundai/2020-elantra-vlp-hero-grad:Hero-Image?qlt=85,0');
+@section('backgroundImageUrl', asset('img/query-list-bg.jpg'));
 
 @section('content')
     <div class="container">

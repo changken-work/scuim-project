@@ -4,7 +4,7 @@
 
 @section('subTitle', "這邊能夠管理您的帳號!!")
 
-@section('backgroundImageUrl', 'https://miro.medium.com/max/7016/1*CGnmDsELRtRPSkFQC6LdjQ.jpeg');
+@section('backgroundImageUrl', asset('img/member-center-bg.jpeg'));
 
 @section('content')
     <div class="container">

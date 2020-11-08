@@ -4,7 +4,7 @@
 
 @section('subTitle', '一般客戶可以在此觀看車款瀏覽紀錄')
 
-@section('backgroundImageUrl', 'https://www.business.com/images/content/5ca/3cad05a215e8a458b48e3/1500-0-');
+@section('backgroundImageUrl', asset('img/view-logs-bg.jpg'));
 
 @section('content')
     <div class="container">

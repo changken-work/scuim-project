@@ -4,7 +4,7 @@
 
 @section('subTitle', "輸入帳號吧!")
 
-@section('backgroundImageUrl', 'https://compathy-magazine-assets.compathy.net/uploads/2019/08/f5f810e9b0aa63dde7732d23a5a6e617_s-640x480.jpg');
+@section('backgroundImageUrl', asset('img/login-bg.jpg'));
 
 @section('content')
     <div class="container">

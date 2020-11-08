@@ -4,7 +4,7 @@
 
 @section('subTitle', "一切的開始!")
 
-@section('backgroundImageUrl', 'https://s.yimg.com/os/en/homerun/feed_manager_auto_publish_494/6f2aa144355c81caac9c9ed66a2075bf');
+@section('backgroundImageUrl', asset('img/home-bg.jpg'));
 
 @section('content')
     <!-- Main Content -->
@@ -38,15 +38,15 @@
         </div>
         <div class="row mx-auto">
             <div class="col-lg-4 col-md-12">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="">
+                <img src="{{ asset('img/person1.jpg') }}" alt="">
                 <p>二手車交易網真的太棒了，它解決了我許多的問題!</p>
             </div>
             <div class="col-lg-4 col-md-12">
-                <img src="https://ewscripps.brightspotcdn.com/dims4/default/5194996/2147483647/strip/true/crop/1000x563+0+0/resize/1280x720!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2Fe9%2F93%2Fa52c003f42ea9ebb36550ca123eb%2Fmike-kelly.png" alt="">
+                <img src="{{ asset('img/person2.png') }}" alt="">
                 <p>我從來都沒有看到任何有像這個網站的服務，區塊鏈技術真的太「wonderful」了，你一定要試試!</p>
             </div>
             <div class="col-lg-4 col-md-12">
-                <img src="https://www.westernunion.com/content/dam/wu/jm/responsive/send-money-in-person-from-jamaica-resp.png" alt="">
+                <img src="{{ asset('img/person3.png') }}" alt="">
                 <p>我愛死這個平台了，它真的幫了我很多!</p>
             </div>
         </div>

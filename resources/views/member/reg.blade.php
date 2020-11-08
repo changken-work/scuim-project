@@ -4,7 +4,7 @@
 
 @section('subTitle', "在這邊可以輕鬆地註冊一個帳號!")
 
-@section('backgroundImageUrl', 'https://s.yimg.com/os/en/homerun/feed_manager_auto_publish_494/2470f8d45f6819b41af7900233786da6');
+@section('backgroundImageUrl', asset('img/register-bg.jpg'));
 
 @section('content')
     <div class="container">
