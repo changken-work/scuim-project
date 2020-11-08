@@ -43,7 +43,7 @@
                     <tr>
                         <th scope="row">車齡</th>
                         @if($car->fake)
-                            <td style="color:#ff0000;" title="這台車的車齡有問題!">{{ $car->age }} 年</td>
+                            <td style="color: #ff0000;">{{ $car->age }} 年(資料不一致)</td>
                         @else
                             <td>{{ $car->age }} 年</td>
                         @endif
